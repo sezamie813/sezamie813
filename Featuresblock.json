@@ -1,0 +1,22 @@
+{
+  "features": {
+    "imagePrompt": "ai",
+    "title": "Our Services",
+    "points": [
+      {
+        "title": "AI Solutions",
+        "description": "Cutting-edge AI solutions for your business needs."
+      },
+      {
+        "title": "IT Support",
+        "description": "24/7 IT support to keep your business running smoothly."
+      },
+      {
+        "title": "Computer Services",
+        "description": "Comprehensive computer services for all your hardware and software needs."
+      }
+    ]
+  },
+  "pageUrl": "/",
+  "websiteId": "website_id"
+}
