@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "title": "AI Revolution in IT and Computer Services",
+    "subtitle": "Join Acme and experience IT the right way!",
+    "button1": "Learn More",
+    "button1Link": "/about",
+    "imagePrompt": "technology"
+  },
+  "pageUrl": "/",
+  "websiteId": "website_id"
+}
