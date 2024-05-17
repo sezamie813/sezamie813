@@ -1,0 +1,20 @@
+{
+  "contacts": {
+    "contactsInfos": [
+      {
+        "type": "email",
+        "text": "info@acme.com"
+      },
+      {
+        "type": "tel",
+        "text": "+1234567890"
+      },
+      {
+        "type": "address",
+        "text": "123 Acme Street, Tech City"
+      }
+    ]
+  },
+  "pageUrl": "/",
+  "websiteId": "website_id"
+}
