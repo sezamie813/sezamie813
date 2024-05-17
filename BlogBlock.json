@@ -1,0 +1,28 @@
+{
+  "blog": {
+    "items": [
+      {
+        "name": "Embracing AI in IT",
+        "description": "How AI is transforming the IT industry.",
+        "imagePrompt": "ai"
+      },
+      {
+        "name": "Future of Computer Services",
+        "description": "The next big trends in computer services.",
+        "imagePrompt": "computer"
+      },
+      {
+        "name": "Why Choose Acme?",
+        "description": "What sets Acme apart from the competition.",
+        "imagePrompt": "service"
+      },
+      {
+        "name": "Customer Success Stories",
+        "description": "Real-life examples of our successful projects.",
+        "imagePrompt": "success"
+      }
+    ]
+  },
+  "pageUrl": "/",
+  "websiteId": "website_id"
+}
