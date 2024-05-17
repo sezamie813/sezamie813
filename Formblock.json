@@ -1,0 +1,22 @@
+{
+  "form": {
+    "title": "Get in Touch",
+    "inputs": [
+      {
+        "inputName": "Name",
+        "inputType": "text"
+      },
+      {
+        "inputName": "Email",
+        "inputType": "email"
+      },
+      {
+        "inputName": "Message",
+        "inputType": "textarea"
+      }
+    ],
+    "sendButtonName": "Send"
+  },
+  "pageUrl": "/",
+  "websiteId": "website_id"
+}
