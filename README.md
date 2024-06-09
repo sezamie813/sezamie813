@@ -10,33 +10,55 @@ As a deep learning aficionado, I architect neural networks that unravel complex 
 
 ## 🌍 AI for Good
 Beyond the realm of research, I am passionate about leveraging AI to make a positive impact on the world. Whether it's developing intelligent systems for healthcare, environmental conservation, or social good, I strive to create AI solutions that uplift and empower communities. 🩺🌿🤝
-<div>
-async function displayTrendingRepos() {
-  try {
-    const response = await fetch('https://ghapi.huchen.dev/repositories');
-    const repos = await response.json();
-    const topRepos = repos.slice(0, 3);
-    const repoList = topRepos.map(repo => `
-      <li>
-        <a href="${repo.url}" target="_blank">${repo.name}</a>
-        <p>${repo.description}</p>
-        <p>⭐ ${repo.stars} | 🍴 ${repo.forks}</p>
-      </li>
-    `).join('');
-    const readmeContent = `
-      # Top Trending Repositories on GitHub
-      ${repoList}
-    `;
-    fs.writeFileSync('README.md', readmeContent);
-    console.log('Updated the top trending repositories in README.md');
-  } catch (error) {
-    console.error('Error fetching trending repositories:', error);
-  }
-}
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Top 3 Trending GitHub Repos</title>
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Top 3 Trending GitHub Repos</h1>
+  <ul id="repo-list"></ul>
 
-// Call the function to display the trending repositories
-displayTrendingRepos();
-</div>
+  <script>
+    // Function to fetch trending repositories from GitHub API
+    async function fetchTrendingRepos() {
+      const response = await fetch('https://api.github.com/repositories?since=daily&per_page=3');
+      const data = await response.json();
+      return data;
+    }
+
+    // Function to update the repo list on the page
+    function updateRepoList(repos) {
+      const repoList = document.getElementById('repo-list');
+      repoList.innerHTML = '';
+
+      repos.forEach(repo => {
+        const listItem = document.createElement('li');
+        const repoLink = document.createElement('a');
+        repoLink.href = repo.html_url;
+        repoLink.textContent = `${repo.owner.login}/${repo.name}`;
+        listItem.appendChild(repoLink);
+        repoList.appendChild(listItem);
+      });
+    }
+
+    // Fetch and update the trending repos on page load
+    fetchTrendingRepos()
+      .then(repos => updateRepoList(repos))
+      .catch(error => console.error('Error fetching trending repos:', error));
+  </script>
+</body>
+</html>
 ## 🔐 Secret Login
 Psst! Want to access the hidden realm of my GitHub profile? Click the secret login button below and enter the magic phrase: "AI Wizard" 🧙‍♂️
 <details>
