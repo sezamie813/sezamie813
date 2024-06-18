@@ -2,16 +2,16 @@
   "contacts": {
     "contactsInfos": [
       {
-        "type": "email",
-        "text": "info@acme.com"
+        "type": "sezamie813@yahoo.com",
+        "text": "SmartApes"
       },
       {
         "type": "tel",
         "text": "+1234567890"
       },
       {
-        "type": "address",
-        "text": "123 Acme Street, Tech City"
+        "type": "Tampa",
+        "text": "Tampa, FLorida"
       }
     ]
   },
