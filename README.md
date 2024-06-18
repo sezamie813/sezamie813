@@ -82,7 +82,5 @@ Psst! Want to access the hidden realm of my GitHub profile? Click the secret log
 ## 🌟 Let's Connect! 
 I'm always eager to collaborate, exchange ideas, and embark on new AI adventures. Feel free to reach out and let's create something extraordinary together! 💬✨
 
-- 📧 Email: [your-email@example.com](mailto:your-email@example.com)
-- 💼 LinkedIn: [Your LinkedIn Profile](link)
-- 🐦 Twitter: [@YourTwitterHandle](link)
+- 📧 Email: [sezamie813@yahoo.com](mailto:your-email@example.com)
 
